@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+</html>
+    <head>  
+        <title>order a device</title>  
+    </head>
+    <body>
+        <p style="text-align:center;font-size:1.5em;">luyanyan</p>
+        <form action="/mhdb/orders_add/" method="post">
+        {% csrf_token %}
+            <fieldset>
+                <legend>Fill out the form, please.</legend>
+                        {{ form_info.as_p }}
+                        <input type="submit" value="submit" />
+                </fieldset>
+        </form>
+    </body>
+</html>
+~       

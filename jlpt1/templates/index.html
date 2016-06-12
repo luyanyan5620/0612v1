@@ -1,0 +1,17 @@
+<!DOCTYPE html>  
+</html>      
+    <head>  
+        <title>报名情况统计</title>  
+    </head>  
+    <body>  
+        <p style="text-align:center;font-size:1.5em;">luyanyan</p>  
+        <form action="/jlpt1/" method="post">   
+        {% csrf_token %}  
+            <fieldset>  
+                <legend>do you want join us?</legend>  
+                        {{ form_info.as_p }}  
+                        <input type="submit" value="submit" />  
+                </fieldset>  
+        </form>  
+    </body>  
+</html>  
